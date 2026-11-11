@@ -1,0 +1,6 @@
+# A 4 GB-friendly Gemma 4 E2B: fixed, small context so it stays on the GPU
+#   ollama create gemma4-4gb -f Modelfile.gemma4-4gb
+#   ollama run gemma4-4gb
+FROM gemma4:e2b
+PARAMETER num_ctx 4096
+PARAMETER temperature 0.7
